@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
+import "./Joker.css";
 function Joker() {
 
 let [joke,setJoke] = useState({});
@@ -18,14 +18,13 @@ useEffect(()=> {
   }
   getFirstJoke();
 },[]);
-
   return (
-    <>
-      <h1>Joker Project !! </h1>
+    <div className='jokerDiv'>
+      <h1>Random Joke Generator !! </h1>
       <h3>{joke.setup}</h3> 
       <h3>{joke.punchline}</h3>
       <button onClick={getNewJoke}> New Joke </button>
-    </>
+    </div>
   )
 }
 
