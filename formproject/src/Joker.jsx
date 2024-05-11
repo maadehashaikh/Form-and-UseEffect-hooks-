@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./Joker.css";
 function Joker() {
-
 let [joke,setJoke] = useState({});
 const URL = "https://official-joke-api.appspot.com/random_joke";
 const getNewJoke = async() => {
@@ -27,5 +26,4 @@ useEffect(()=> {
     </div>
   )
 }
-
 export default Joker
